@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    <!--Записать в коротком виде-->
+
+    a +=10; b *=18; c -=10;
+    d = d*
+
+//  Условные операторы
+
+    var a;
+    if(a == "hiden"){
+        a = "visible";
+        document.write(a);
+    }else{
+        a = "hiden";
+        document.write(a);
+    }
+//    --------------
+    var a;
+    a == "hiden"? document.write(a = "visible" ): document.write(a == "hiden");
+
+//   Если переменаая равна нулю
+
+    var c;
+    c = 0? с = 1:
+            c < 0? с = "less then zero":  c *= 10; document.write(c);
+
+//    Конструктор switch
+
+    var a;
+    switch(a){
+        case a == "block": console.log(a); break
+        case a == "none":  console.log(a); break
+        case a == "inline": console.log(a); break
+        default : console.log("No value");
+    }
+
+//    Задачи циклы
+//     2 Вывести в обратном порядке str ))
+
+      var str = "tsebeht ma i";
+
+        for(var i = str.length;i-- ; ){
+            document.write(str[i]);
+        }
+
+
+//  3. Факториал числа 10 ))
+
+   var i = 1;
+    var fac = 1;
+    while (i<=10){
+        fac = fac * i;
+        i +=1;
+         }
+    document.write(fac);
+
+//   4.  Создать строку
+
+  var str =  "Считаем до 10: ";
+
+    var arr = [];
+    for (var i = 0; i < 10; i++){
+        arr[i] = i+1;
+    }
+     str = str + arr.join(", ");
+     document.write(str);
+
+// 5. "JavaScript is a pretty good language" - сделать каждое слово  что б начиналось с  большой буквы и убрать пробелы ))
+
+    var str =  "JavaScript is a pretty good language";
+
+    var arr = str.split(" ");
+    var empty = "";
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substr(1);
+
+        console.log(arr[i]+ "=" + arr[i].substr(1));
+        empty += arr[i];
+    }
+    console.log(empty);
+
+// 6. Найти все нечетные числа от 1-15 ))
+
+    for (var i =1; i <=15; i++){
+        if(i%2 != 0){
+            console.log(i)
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
